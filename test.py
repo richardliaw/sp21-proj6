@@ -150,7 +150,6 @@ def check_diff(test_name):
                        "Make sure to explicitly project out the `_id` field!"
             if line: # ignore empty lines
                 # this tries to parse a line of your output as json
-                print(line)
                 actual.append(json.loads(line))
     if not actual:
         return "FAIL: Empty output"
